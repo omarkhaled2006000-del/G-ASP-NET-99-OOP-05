@@ -365,7 +365,7 @@ namespace SmartDeliverySystem
         public Shipment this[int index]
         {
 
-           
+
             get
             {
                 if (index < 0 || index >= _Counter)
@@ -522,7 +522,7 @@ namespace SmartDeliverySystem
             );
 
 
-           
+
             sh2.UpdateTrackingStatus("Out For Delivery");
             sh3.UpdateTrackingStatus("Delivered");
 
@@ -577,7 +577,7 @@ namespace SmartDeliverySystem
 
             DeliveryUtillities.PrintSystemTitle("Object Copying Demonstration");
 
-            
+
             Shipment assigned = sh1;
 
             Console.WriteLine(
@@ -585,10 +585,10 @@ namespace SmartDeliverySystem
             );
 
 
-            
+
             Shipment shallowCloned = sh1.ShallowCopy();
 
-            
+
             Shipment deepCloned = sh1.DeepCopy();
 
             Console.WriteLine(
